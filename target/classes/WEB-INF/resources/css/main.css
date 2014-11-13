@@ -1,0 +1,97 @@
+<style type="text/css">
+body {
+	margin: 0 auto;
+	padding: 0 0;
+	font-family: Verdana, Arial, sans-serif, serif;
+	background: #FFFFFF;
+}
+
+div.main {
+	width: 1000px;
+	height: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -480px;
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px #888;
+	-khtml-box-shadow: 0 0 5px 5px #888;
+	box-shadow: 0 0 5px 5px #CFCFCF;
+	-moz-border-radius: 10px 10px;
+	-webkit-border-radius: 10px 10px;
+	-khtml-border-radius: 10px 10px;
+	border-radius: 10px 10px;
+	padding: 5px;
+	border-width: 1px;
+	border-color: #091256;
+	border-style: solid;
+	background: #FFFFFF;
+}
+
+.mainheader {
+	border-width: 1px;
+	border-color: #000000;
+	background: #FFFFFF; /* Old browsers */
+	padding: 5px;
+	color: #000000;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.content {
+	clear: both;
+	padding: 10px 25px 10px 25px;
+	float: left;
+	margin: 1px;
+	width: 65%;
+	height: 420px;
+	overflow: auto;
+	font-style: oblique;
+	font-size: .9em;
+	table-layout: inherit;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 4px;
+	background: #FFFFFF;
+}
+
+.rightPane {
+	padding: 10px 25px 10px 25px;
+	float: left;
+	width: 24%;
+	height: 420px;
+	margin: 1px 0 0 0;
+	font-size: .8em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 4px;
+	background: #FFFFFF;
+}
+
+.menu {
+	padding: 2px;
+	float: left;
+	width: 99.4%;
+	margin: 2px 0 0 0;
+	height: 60%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e1e1e1;
+	border-radius: 4px;
+	border-width: 1px;
+	background: #FFFFFF; /* Old browsers */
+}
+
+.footer {
+	clear: both;
+	background: #FFFFFF;
+	padding: 5px;
+	text-align: center;
+	font-size: 0.5em;
+	color: #000000;
+}
+</style>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/WEB-INF/pages/template/mainLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="leftPane" value="/WEB-INF/pages/template/menu.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="rightPane"
+			value="/WEB-INF/pages/template/information.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+	</definition>
+
+	<definition name="loginLayout" template="/WEB-INF/pages/template/loginLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="leftPane" value="/WEB-INF/pages/template/menu.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="mainLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="content" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+	
+	<!-- TEAM -->
+	<definition name="add-team-form" extends="mainLayout">
+		<put-attribute name="title" value="Add New Team" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/team/add-team-form.jsp" />
+	</definition>
+
+	<definition name="edit-team-form" extends="mainLayout">
+		<put-attribute name="title" value="Edit Team" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/team/edit-team-form.jsp" />
+	</definition>
+
+	<definition name="list-of-teams" extends="mainLayout">
+		<put-attribute name="title" value="List Teams" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/team/list-of-teams.jsp" />
+	</definition>
+	
+	<!-- LOGIN AND ERROR -->
+	<definition name="login" extends="loginLayout">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+		<put-attribute name="leftPane" value=" " />
+	</definition>
+
+	<definition name="403" extends="loginLayout">
+		<put-attribute name="title" value="Access Denied" />
+		<put-attribute name="content" value="/WEB-INF/pages/403.jsp" />
+		<put-attribute name="leftPane" value="/WEB-INF/pages/template/menu.jsp" />
+	</definition>
+	
+	<!-- USERS -->
+	<definition name="list-of-users" extends="mainLayout">
+		<put-attribute name="title" value="List Users" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/user/list-of-users.jsp" />
+	</definition>
+	
+	<definition name="add-user-form" extends="mainLayout">
+		<put-attribute name="title" value="Add New User" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/user/add-user-form.jsp" />
+	</definition>
+	
+	<definition name="edit-user-form" extends="mainLayout">
+		<put-attribute name="title" value="Edit User" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/user/edit-user-form.jsp" />
+	</definition>
+</tiles-definitions>
