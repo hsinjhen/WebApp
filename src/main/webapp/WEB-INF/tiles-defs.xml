@@ -79,4 +79,11 @@
 		<put-attribute name="content"
 			value="/WEB-INF/pages/user/edit-user-form.jsp" />
 	</definition>
+	
+	<!--EMAIL -->
+	<definition name="email-form" extends="mainLayout">
+		<put-attribute name="title" value="Send Email" />
+		<put-attribute name="content"
+			value="/WEB-INF/pages/email/email-form.jsp" />
+	</definition>
 </tiles-definitions>

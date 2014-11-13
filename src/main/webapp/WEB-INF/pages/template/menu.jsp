@@ -3,6 +3,7 @@
 <span class="menu"><a href="${page}/team">Home</a></span>
 <span class="menu"><a href="${page}/team/list">Team</a></span>
 <span class="menu"><a href="${page}/user/list">User</a></span>
+<span class="menu"><a href="${page}/email/sendEmail">Email</a></span>
 
 <script type="text/javascript">
 	$(function() {
